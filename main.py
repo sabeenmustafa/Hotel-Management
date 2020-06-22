@@ -8,14 +8,14 @@ root.geometry('1920x1080')
 root.configure(bg='black')  
 
 
-def click_checkinn():
-    call(["python", "checkin_gui_and_program.py"])
+def click_checkin():
+    call(["python", "checkin.py"])
 def click_list():
-    call(["python", "listgui.py"])
+    call(["python", "guest_list.py"])
 def click_checkout():
-    call(["python", "checkoutgui.py"])
+    call(["python", "checkout.py"])
 def click_getinfo():
-    call(["python","getinfoui.py"])         
+    call(["python","info.py"])         
 
 
 Frame1 = tkinter.Frame(root)
@@ -38,7 +38,7 @@ Button2.configure(highlightcolor="black")
 Button2.configure(pady="0")
 Button2.configure(text='''1.CHECK INN''')
 Button2.configure(width=566)
-Button2.configure(command=click_checkinn)
+Button2.configure(command=click_checkin)
 
 Button3 =tkinter.Button(Frame1)
 Button3.place(relx=0.18, rely=0.33, height=93, width=566)
