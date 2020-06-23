@@ -10,12 +10,12 @@ root.configure(bg='black')
 
 def click_checkin():
     call(["python", "checkin.py"])
-def click_list():
-    call(["python", "guest_list.py"])
+def click_roomdetail():
+    call(["python", "roomdetail.py"])
 def click_checkout():
     call(["python", "checkout.py"])
-def click_getinfo():
-    call(["python","info.py"])         
+def click_customer():
+    call(["python","customer.py"])         
 
 
 Frame1 = tkinter.Frame(root)
@@ -50,9 +50,9 @@ Button3.configure(foreground="#000000")
 Button3.configure(highlightbackground="#d9d9d9")
 Button3.configure(highlightcolor="black")
 Button3.configure(pady="0")
-Button3.configure(text='''2.SHOW GUEST LIST''')
+Button3.configure(text='''2.ROOM DETAILS''')
 Button3.configure(width=566)
-Button3.configure(command=click_list)
+Button3.configure(command=click_roomdetail)
 
 Button4 = tkinter.Button(Frame1)
 Button4.place(relx=0.18, rely=0.47, height=93, width=566)
@@ -78,9 +78,9 @@ Button5.configure(foreground="#000000")
 Button5.configure(highlightbackground="#d9d9d9")
 Button5.configure(highlightcolor="black")
 Button5.configure(pady="0")
-Button5.configure(text='''4.GET INFO OF ANY GUEST''')
+Button5.configure(text='''4.CUSTOMER  DETAILS''')
 Button5.configure(width=566)
-Button5.configure(command=click_getinfo)
+Button5.configure(command=click_customer)
         
 Button6 = tkinter.Button(Frame1)
 Button6.place(relx=0.18, rely=0.77, height=103, width=566)

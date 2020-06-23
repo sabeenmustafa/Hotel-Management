@@ -2,7 +2,7 @@ import tkinter
 from subprocess import call
 import mysql.connector
 
-root = Tk(className=" HOTEL MANAGEMENT")
+root = tkinter.Tk(className=" HOTEL MANAGEMENT")
 root.geometry('1000x750')
 
 try:
@@ -85,7 +85,7 @@ heading_label = Label(root, text="  CUSTOMER CHECK IN FORM  ", font=('Orbitron',
                       fg="white")
 heading_label.pack(fill=X)
 
-top_frame = Frame(root)
+top_frame = tkinter.Frame(root)
 top_frame.pack()
 
 
